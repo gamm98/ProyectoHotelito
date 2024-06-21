@@ -1,0 +1,99 @@
+ body{
+   
+   background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: #f6f5f5;
+    font-family: arial,sans-serif;
+
+}
+form {
+    animation: pulse;
+    animation-duration: 2s;
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#d5d6de;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 4px solid #d5d6de;
+    border-radius: 5px;
+   
+}
+legend{
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 110%;
+}
+
+.p{
+    margin-top: 20px;
+}
+
+/* Estilos para los fieldsets */
+fieldset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid #330033;
+    border-radius: 5px;
+    justify-content: center;
+    
+}
+textArea{
+    margin-bottom: 25px;
+}
+
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/* Estilos para los elementos de entrada de texto y select */
+input[type="text"],
+select {
+    width: 80%;
+    padding: 5px;
+    font-size:95%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+fieldset legend{
+    background-color: #bebce4;
+    border-radius: 5px;
+    color: black;
+    font-size: 125%;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /* CSS para el botón */
+.upbtn.btn-color {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.upbtn.btn-color:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+}
+
+    
+
+}

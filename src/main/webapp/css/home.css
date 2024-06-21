@@ -1,0 +1,487 @@
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[ Header Desktop ]*/
+
+.container-menu-desktop {
+    height: auto;
+    width: 100%;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Establece el tamaño del header */
+.header-v2 {
+    height: 200px;
+}
+
+.header-v2 .container-menu-desktop {
+    height: 200px;
+}
+
+.header-v2 .wrap-menu-desktop {
+    right: auto;
+    left: auto;
+}
+
+/*==================================================================
+[ Menu ]*/
+
+.wrap-menu-desktop {
+    position: fixed;
+    z-index: 1100;
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    top: 40px;
+    left: 80px;
+    -webkit-transition: height 0.3s, background-color 0.3s;
+    -o-transition: height 0.3s, background-color 0.3s;
+    -moz-transition: height 0.3s, background-color 0.3s;
+    transition: height 0.3s, background-color 0.3s;
+}
+
+.header-v2 .wrap-menu-desktop {
+    background-color: #fff;
+    top: 0;
+}
+/*
+---------------------------------------------*/
+.limiter-menu-desktop {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+/*------------------------------------------------------------------
+[ Logo ]*/
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    height: 65%;
+    margin-right: auto;
+    left: auto;
+}
+
+/* Iconos de la derecha */
+
+.logo1 img {
+    max-width: 18px;
+}
+
+.logo2 img {
+    max-width: 18px;
+}
+
+.logo4 img {
+    max-width: 25px;
+}
+.logo3 img {
+    max-width: 18px;
+}
+
+.logo2 {
+    float: left;
+    margin-left: 5px;
+    margin-right: 40px;
+}
+
+.logo1 {
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.logo3 {
+    float: left;
+    margin-left: 5px;
+    margin-right: 40px;
+}
+.logo4 {
+    float: left;
+    margin-left: 5px;
+    margin-right: 40px;
+}
+
+
+/*------------------------------------------------------------------
+[ Menu ]*/
+
+.menu-desktop {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-menu {
+    list-style-type: none;
+    margin: 0;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu > li {
+    display: block;
+    position: relative;
+    padding: 20px 10px 20px 0px;
+    margin: 0px 4px 0px 14px;
+}
+
+.main-menu > li > a {
+    font-family: Poppins-Medium;
+    font-size: 14px;
+    color: #333;
+    padding: 5px 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+
+/*---------------------------------------------*/
+.main-menu > li:hover > a {
+    text-decoration: none;
+    color: #6c7ae0;
+}
+
+.main-menu > li:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media (max-width: 1300px) {
+    .main-menu {
+        right: 100%;
+        left: auto;
+    }
+
+    .main-menu {
+        right: 0px;
+        left: auto;
+    }
+}
+
+/*
+==================================================================
+[ Fixed menu desktop ]*/
+
+.fix-menu-desktop .wrap-menu-desktop {
+    height: 70px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header-v2 .fix-menu-desktop.container-menu-desktop {
+    height: 70px;
+}
+
+/*---------------------------------------------*/
+.main-menu > li.active-menu > a {
+    color: #6c7ae0;
+}
+
+
+/*---------------------------------------------------------------
+SLIDER
+
+ Alinea el slider debajo del header y ocupa el ancho completo */
+.slider-container {
+    position: relative;
+    width: 100%;
+    top: 200px;  /*Alinea el slider debajo del header*/
+    background: #000;  /*Cambia el color de fondo según tus preferencias */
+}
+.position{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider {
+    background-image: url(../IMAGES/PRINCIPAL/Estandar.jpg);
+    background-size: cover;
+    height: 100vh;  /*Ocupa toda la altura de la pantalla*/
+    width: 100%;
+    border-radius: 0;  /*Quita el borde redondeado si no es necesario*/
+    animation: animate 10s infinite;
+}
+/* Agrega estilo al contenido del slider */
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+/* Agrega una capa de superposición */
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /*Color de superposición oscuro con transparencia*/
+}
+
+/* Agrega estilo al contenido del slider */
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.slider-content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.slider-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.slider-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6c7ae0;  /*Color de fondo del botón*/
+    color: #fff;  /*Color del texto del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.slider-content .btn:hover {
+    background: #3949ab;  /*Cambia el color de fondo al pasar el mouse */
+}
+@keyframes animate{
+    60%{
+        background-image: url(../IMAGES/PRINCIPAL/suite3.jpg);
+        background-size:cover;
+    }
+    80%{
+        background-image: url(../IMAGES/PRINCIPAL/suite.jpg);
+        background-size:cover;
+    }
+    100%{
+        background-image: url(../IMAGES/PRINCIPAL/Estandar.jpg);
+        background-size:cover;
+    }
+
+}
+
+/* Sección */
+section {
+    background-color: #f6f5f5; /* Fondo gris suave */
+    padding: 50px 0;
+    margin-top: 569px; /* Ajusta el margen superior */
+}
+
+/* Estilo de los iframes de video */
+iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border: none;
+}
+
+/* Introducción */
+.intro, .intro2 {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.intro h1, .intro2 h1 {
+    font-size: 36px;
+    color: #000; /* Color de texto blanco */
+    font-weight: 700;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.intro h1:hover, .intro2 h1:hover {
+    transform: scale(1.05);
+    color: #ff0000; /* Cambia el color del título al pasar el mouse */
+}
+
+.intro p {
+    font-size: 20px;
+    color: #555; /* Color de texto gris oscuro */
+    line-height: 1.5;
+}
+
+/* Catálogo */
+.catalog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    margin-top: 70px; /* Aumenta la distancia entre el slider y el catálogo */
+}
+
+.catalog-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%; /* Ancho fijo para todas las cartas */
+    height: 375px; /* Establece una altura fija para todas las cartas */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-content {
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.card-content p {
+    font-size: 17px;
+    color: #777;
+    text-align: justify; /* Justifica el texto */
+    margin: 10px 0;
+}
+
+.catalog-card:hover {
+    transform: scale(1.05); /* Escala la carta al pasar el mouse */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombreado suave al pasar el mouse */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* --------------------------------------FOOTER---------------------- */
+
+footer {
+    background-color: #1c1c1c;  /*Cambia el color de fondo del footer */
+    color: #f6f5f5; /*color del texto del footer*/
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.contact-info, .social-media, .buttons {
+    flex: 0 0 calc(31.33% - 60px); /*espaciado de costado*/
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los títulos de las secciones */
+.contact-info h3, .social-media h3, .buttons h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin: 20px 0;  /*Espacio entre los enlaces */
+}
+
+/* Estilos para los enlaces de redes sociales y ubicación */
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;  /*Espacio entre los enlaces*/
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #fff;  /*Restaura el color de los enlaces al pasar el mouse */
+}
+
+/* Estilos para los botones */
+.buttons button {
+    background-color: #3949ab;  /*Cambia el color de fondo de los botones*/
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;  /*Espacio entre los botones*/
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #6c7ae0;
+    transform: scale(1.05);  /*Efecto de escala al pasar el mouse */
+}
+
+/* Estilos para los iconos de redes sociales y ubicación */
+.social-media i, .social-media .fas {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[ Header Desktop ]*/
+
+.rooms{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}

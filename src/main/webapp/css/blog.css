@@ -1,0 +1,75 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo para la sección de blog */
+.blog-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.blog-post {
+    flex: 0 0 calc(33.333% - 20px);
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box; /* Añadir esto para incluir el relleno en el ancho */
+}
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.blog-post img {
+    width: 100%; /* Establece un ancho fijo al 100% del contenedor */
+    height: 400px; /* Establece una altura fija */
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.blog-post p {
+    font-size: 16px;
+    color: #444;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.blog-post a {
+    display: inline-block;
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+/* Estilo para el enlace cuando se encuentra en estado hover (sobre él) */
+
+.blog-post:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.05);
+}

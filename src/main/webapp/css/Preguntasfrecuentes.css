@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f6f5f5;
+}
+
+.container {
+    margin: 0 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* título principal */
+.container h1 {
+    color: #333;
+}
+
+/*pestaña de preguntas*/
+.container .tab {
+    position: relative;
+    background: #fff;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container .tab input {
+    appearance: none;
+}
+
+.container .tab label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+/* icono '+' */
+.container .tab label::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+}
+
+.container .tab:hover label::after {
+    color: #333;
+}
+
+/* Rota icono '+'*/
+.container .tab input:checked ~ label::after {
+    transform: rotate(135deg);
+}
+
+.container .tab label h2 {
+    width: 40px;
+    height: 40px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* colores de fondo*/
+.container .tab:nth-child(2) label h2 {
+    background: linear-gradient(135deg, #3c8ce7, #bebce4);
+}
+
+.container .tab:nth-child(3) label h2 {
+    background: linear-gradient(135deg, #3c8ce7, #bebce4);
+}
+
+.container .tab:nth-child(4) label h2 {
+    background: linear-gradient(135deg, #3c8ce7, #bebce4);
+}
+
+.container .tab:nth-child(5) label h2 {
+    background: linear-gradient(135deg, #3c8ce7, #bebce4);
+}
+
+/* Establece estilos para el título de la pregunta en cada pestaña */
+.container .tab label h3 {
+    position: relative;
+    font-weight: 500;
+    font-weight: bold;
+    color: #333;
+    z-index: 10;
+}
+
+.container .tab .content {
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+
+.container .tab input:checked ~ .content {/*Mostrar cuando está seleccionada */
+    max-height: 100vh;
+}
+
+/*los párrafos*/
+.container .tab .content p {
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/*lista dentro */
+.container .tab .content ul li span {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: justify;
+}
+
+.container .tab .content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.container .tab .content ul li {
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.xc{
+    display: flex;
+    justify-content: center;
+}
